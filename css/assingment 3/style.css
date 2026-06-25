@@ -1,0 +1,54 @@
+/* div{
+    background-color: red;
+    height: 200px;
+    margin: 40px;
+    width: 200px;
+    padding: 50px;
+    border: 5px solid black;
+    border-radius: 30px 20px 40px; 
+    border-radius: 50%; 
+background-image: url('./download.jpeg'); 
+background-size: cover;  
+background-position: center; 
+display: inline-block;
+background-color: firebrick;
+display: block;
+}
+a{
+    background-color: red;
+}  */
+.main{ 
+    /* display: flex; */
+    /* flex-direction: column; */
+    /* justify-content: space-evenly; */
+     /* flex-wrap: wrap; */
+     position: relative;
+     background-color: yellow;
+    width: 200px;
+    height: 200px;
+    left: 100px;
+    /* border: 4px solid black; */
+    /* align-items: last baseline; */
+    /* align-content: space-around; */
+
+}
+ 
+.card1{
+    height: 100px;
+    width: 100px;
+    background-color: brown;
+    
+}
+
+.card2{
+    height: 120px;
+    width: 140px;
+    background-color: rgb(42, 165, 83);
+    align-self: center;
+}
+
+.card3{
+    height: 160px;
+    width: 180px;
+    background-color: palegreen;
+}

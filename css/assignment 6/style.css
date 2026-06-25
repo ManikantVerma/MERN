@@ -1,0 +1,231 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Georgia, serif;
+}
+
+body{
+    width:100%;
+    height:100vh;
+    background-image:
+        linear-gradient(rgba(0,0,0,.25),rgba(0,0,0,.25)),
+        url("12.jpg");
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;
+    overflow:hidden;
+}
+
+/* ================= Container ================= */
+
+.container{
+    width:100%;
+    height:100vh;
+    padding:30px 70px;
+}
+
+/* ================= Navbar ================= */
+
+nav{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.logo{
+    width:45px;
+    cursor:pointer;
+}
+
+nav ul{
+    display:flex;
+    align-items:center;
+    gap:35px;
+    list-style:none;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    font-size:14px;
+    font-weight:bold;
+    transition:.3s;
+}
+
+nav a:hover{
+    color:#f7d67c;
+}
+
+.menu{
+    width:36px;
+    height:36px;
+    background:#7b98aa;
+    border-radius:50%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    color:white;
+    font-size:16px;
+    cursor:pointer;
+}
+
+/* ================= Main ================= */
+
+.main{
+    width:100%;
+    height:85vh;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+/* ================= Left Section ================= */
+
+.left{
+    width:58%;
+}
+
+.left h1{
+    font-size:92px;
+    color:white;
+    letter-spacing:2px;
+    margin-bottom:15px;
+}
+
+.left p{
+    width:92%;
+    color:white;
+    font-size:17px;
+    line-height:28px;
+}
+
+button{
+    margin-top:35px;
+    width:190px;
+    height:45px;
+    border:none;
+    border-radius:30px;
+    background:white;
+    color:black;
+    font-size:15px;
+    font-weight:bold;
+    cursor:pointer;
+    transition:.4s;
+}
+
+button:hover{
+    background:#222;
+    color:white;
+}
+
+/* ================= Right Section ================= */
+
+.right{
+    width:32%;
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:22px;
+}
+
+/* ================= Cards ================= */
+
+.card{
+    height:240px;
+    border-radius:18px;
+    padding:18px;
+    color:white;
+    background-size:cover;
+    background-position:center;
+    transition:.4s;
+    cursor:pointer;
+}
+
+.card:hover{
+    transform:translateY(-8px);
+}
+
+.card h2{
+    font-size:16px;
+    margin-bottom:12px;
+}
+
+.card p{
+    font-size:13px;
+    line-height:22px;
+}
+
+/* ================= Background Images ================= */
+
+.card1{
+    background-image:
+        linear-gradient(rgba(0,0,0,.25),rgba(0,0,0,.25)),
+        url("https://images.unsplash.com/photo-1509316785289-025f5b846b35");
+}
+
+.card2{
+    background-image:
+        linear-gradient(rgba(0,0,0,.25),rgba(0,0,0,.25)),
+        url("https://images.unsplash.com/photo-1518684079-3c830dcef090");
+}
+
+.card3{
+    background-image:
+        linear-gradient(rgba(0,0,0,.25),rgba(0,0,0,.25)),
+        url("https://images.unsplash.com/photo-1539768942893-daf53e448371");
+}
+
+.card4{
+    background-image:
+        linear-gradient(rgba(0,0,0,.25),rgba(0,0,0,.25)),
+        url("https://images.unsplash.com/photo-1469474968028-56623f02e42e");
+}
+
+/* ================= Responsive ================= */
+
+@media(max-width:900px){
+
+body{
+    overflow:auto;
+}
+
+.container{
+    padding:20px;
+}
+
+.main{
+    flex-direction:column;
+    height:auto;
+    gap:40px;
+}
+
+.left{
+    width:100%;
+}
+
+.left h1{
+    font-size:60px;
+}
+
+.left p{
+    width:100%;
+    font-size:15px;
+}
+
+.right{
+    width:100%;
+    grid-template-columns:1fr;
+}
+
+nav ul{
+    gap:18px;
+}
+
+nav a{
+    font-size:12px;
+}
+
+.card{
+    height:220px;
+}
+}
